@@ -29,7 +29,10 @@
 
     .nav-link {
         color: #0a1f4e !important;
-        margin-left: -200% !important;
+        /*
+        margin-left: -200% !important; */
+        margin-left: 0 !important;
+        text-align: center !important; 
     }
     
     .botao {
@@ -144,9 +147,13 @@ body{
 }
 
 .Image{
-    width: 30%;
+   /* width: 30%;
     margin-top: -20%;
-    margin-right: 13%;
+    margin-right: 13%; */
+
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 a {
@@ -179,17 +186,21 @@ aside {
 }
 
 .navbar {
-    display: flex;
+   /* display: flex;
     flex-flow: row wrap;
     height: 125px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 2%;
+    padding: 2%; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 5%;
 }
 
 .topo{
-    margin-left: 160px;
+    /*margin-left: 160px;*/
+        margin-left: 10%;
 }
 
 
