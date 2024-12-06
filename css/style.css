@@ -1,206 +1,282 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-@media screen and (min-width:990.1px) {
-
-    .icns {
-        margin-left: 36% !important;
-    }
-}
-
-@media screen and (max-width:350px){
-    .topo {
-        font-size: 30px;
-        width: 100% !important;
-        margin-left: 10% !important;
-
-    }
-
-    .btst {
-        margin-top: 5%;
-    }
-
-    .p {width: 80%; margin-left: 10%; margin-top: 5%; font-size: 16px;}
-    
-    .Image {
-        width: 90% !important;
-        margin-right: 5% !important;
-        margin-top: 3% !important;
-    }
-
-    .nav-link {
-        color: #0a1f4e !important;
-        /*
-        margin-left: -200% !important; */
-        margin-left: 0 !important;
-        text-align: center !important; 
-    }
-    
-    .botao {
-        width: 50%;
-        margin-top: 5% !important;
-        margin-left: 23% !important;
-    }
-    
-    #tit {
-        font-size: 40px !important;
-        width: 100%;
-        margin-top: 6%;
-        margin-left: 10% !important;
-    }
-    
-    .navbar-nav {
-        margin-right: 20%;
-        margin-top: -30%;
-    }
-    .footer {
-        width: 110% !important;
-    }
-
-    li {
-        background-color: white;
-        width: 65%;
-        padding: 5%;
-    }
-
-    .pf {
-        width: 100% !important;
-        font-size: 16px;
-        margin-right: 10% !important;
-    }
-
-    .rm {
-        display: none;
-    }
-    
-*{
+/* Reset básico */
+* {
     box-sizing: border-box;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
 }
 
-}
-
-@media screen and (min-width: 750px) and (max-width:990px){
-
-    .topo {
-        margin-left: 31% !important;
-    }
-
-    .h6{
-        margin-left: 6% !important;
-    }
-
-    li {
-        background-color: white;
-        width: 65%;
-        padding: 5%;
-        margin-left: 75%  !important;
-        margin-top: -20% !important;
-    }
-
-    .nav-link {
-        color: #0a1f4e !important;
-        margin-left: -200%  !important;
-    }
-
-    .footer p{
-        text-align: center !important;
-    }
-
-    .aside{
-        margin-left: 50px;
-    }
-
-    #tit {
-        margin-left: 17% !important;
-        margin-top: -8% !important;
-        padding: 50px;
-    }
-    .botao {
-        margin-left: 10.5% !important;
-    }
-
-    .Image {
-        width: 50% !important;
-        margin-top: -55% !important;
-        margin-right: 5% !important;
-    }
-    .pf {
-        width: 100% !important;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    .rm {
-        display: none;
-    }
-}
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0%;
-    font-family: 'Open Sans' sans-serif;
+body {
+    font-family: 'Open Sans', sans-serif;
     background-color: #feecd4;
     overflow-x: hidden;
+    margin: 0;
 }
 
-.Image{
-   /* width: 30%;
-    margin-top: -20%;
-    margin-right: 13%; */
-
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
+/* Links */
 a {
     text-decoration: none;
     color: white;
 }
 
-#tit {
-    margin-left: 8%;
-    margin-top: 12%;
-}
-
-p {
-    font-size: 18px;
-    width: 40%;
-}
-
-aside {
-    margin-top: 7%;
-}
-
-.links{
-    padding: 50px;
-}
-
-.links a:hover{
-    color: #f54e51 !important;
-
+a:hover {
+    color: #f54e51;
     border-top: solid 5px #0a1f4e;
 }
 
+/* Navbar */
 .navbar {
-   /* display: flex;
-    flex-flow: row wrap;
-    height: 125px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 2%; */
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 5%;
+    align-items: center;
+    height: 125px;
+    width: 100%;
+    padding: 1rem 2%;
+    background-color: #fff; /* Adicione uma cor de fundo se necessário */
 }
 
-.topo{
-    /*margin-left: 160px;*/
+.topo {
+    margin-left: 160px; /* Ajustar para responsivo */
+}
+
+@media screen and (max-width: 990px) {
+    .topo {
+        margin-left: 10%; /* Ajuste proporcional */
+    }
+}
+
+@media screen and (min-width: 990.1px) {
+    .icns {
+        margin-left: 36%;
+    }
+}
+
+/* Título */
+#tit {
+    margin-left: 8%;
+    margin-top: 12%;
+    font-size: 2rem; /* Usar unidades relativas */
+}
+
+@media screen and (max-width: 990px) {
+    #tit {
+        margin-left: 17%;
+        margin-top: -8%;
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        #tit {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #tit {
+        font-size: 2.5rem;
+        width: 100%;
+        margin-top: 6%;
         margin-left: 10%;
+    }
 }
 
+/* Parágrafos */
+p {
+    font-size: 1.125rem; /* 18px */
+    width: 40%;
+}
 
+@media screen and (max-width: 750px) {
+    p {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+        font-size: 1rem; /* 16px */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    p {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+        font-size: 1rem;
+    }
+}
+
+/* Imagens */
+.Image {
+    width: 30%;
+    margin-top: -20%;
+    margin-right: 13%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 990px) {
+    .Image {
+        width: 50%;
+        margin-top: -55%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Image {
+        width: 90%;
+        margin-right: 5%;
+        margin-top: 3%;
+    }
+}
+
+/* Botões */
+.botao {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 23%;
+}
+
+@media screen and (min-width: 750px) and (max-width: 990px) {
+    .botao {
+        margin-left: 10.5%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .botao {
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 23%;
+    }
+}
+
+/* Lista de Navegação */
+.nav-link {
+    color: #0a1f4e;
+}
+
+@media screen and (max-width: 990px) {
+    .nav-link {
+        margin-left: 0; /* Remover deslocamento excessivo */
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav-link {
+        margin-left: 0; /* Ajuste conforme necessário */
+    }
+}
+
+/* Itens de Lista */
+li {
+    background-color: white;
+    width: 65%;
+    padding: 5%;
+    margin-left: 0; /* Remover margens fixas */
+}
+
+@media screen and (max-width: 990px) {
+    li {
+        margin-left: 0; /* Ajuste conforme necessário */
+        margin-top: 0; /* Remover margens negativas */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    li {
+        width: 65%;
+        padding: 5%;
+    }
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+}
+
+@media screen and (max-width: 350px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 990px) {
+    .footer p {
+        text-align: center;
+    }
+}
+
+/* Navbar-nav */
+.navbar-nav {
+    margin-right: 20%;
+    margin-top: -30%;
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-nav {
+        margin-right: 20%;
+        margin-top: -30%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .navbar-nav {
+        margin-right: 20%;
+        margin-top: -30%;
+    }
+}
+
+/* Outros elementos */
+.aside {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 750px) {
+    aside {
+        margin-top: 7%;
+    }
+}
+
+/* Classes específicas */
+.pf {
+    width: 100%;
+    font-size: 1rem;
+    margin-right: 10%;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .pf {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.rm {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .rm {
+        display: none;
+    }
+}
+
+/* Links na Navbar */
+.links {
+    padding: 50px;
+}
+
+.links a:hover {
+    color: #f54e51;
+    border-top: solid 5px #0a1f4e;
+}
