@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@media screen and (min-width:990.1px) {
+
+    .icns {
+        margin-left: 36% !important;
+    }
+}
+
+@media screen and (max-width:350px){
+    .topo {
+        font-size: 30px;
+        width: 100% !important;
+        margin-left: 10% !important;
+
+    }
+
+    .btst {
+        margin-top: 5%;
+    }
+
+    .p {width: 80%; margin-left: 10%; margin-top: 5%; font-size: 16px;}
+    
+    .Image {
+        width: 90% !important;
+        margin-right: 5% !important;
+        margin-top: 3% !important;
+    }
+
+    .nav-link {
+        color: #0a1f4e !important;
+        margin-left: -200% !important;
+    }
+    
+    .botao {
+        width: 50%;
+        margin-top: 5% !important;
+        margin-left: 23% !important;
+    }
+    
+    #tit {
+        font-size: 40px !important;
+        width: 100%;
+        margin-top: 6%;
+        margin-left: 10% !important;
+    }
+    
+    .navbar-nav {
+        margin-right: 20%;
+        margin-top: -30%;
+    }
+    .footer {
+        width: 110% !important;
+    }
+
+    li {
+        background-color: white;
+        width: 65%;
+        padding: 5%;
+    }
+
+    .pf {
+        width: 100% !important;
+        font-size: 16px;
+        margin-right: 10% !important;
+    }
+
+    .rm {
+        display: none;
+    }
+    
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+iframe{
+    display: none;
+}
+
+}
+
+@media screen and (min-width:640px){
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root 
+{
+  --cor1 : #0a1f4e;
+  --cor2 : #f54e51;
+  --cor3 : #feecd4;
+}
+
+
+h1 {
+    color: var(--cor1) !important;
+}
+
+h2 {
+    color: #f54e51 !important;
+}
+
+h3 {
+    color: #0a1f4e !important;
+}
+
+body{
+    margin: 0%;
+    font-family: 'Open Sans' sans-serif;
+    background-color: #feecd4;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+a:hover {
+    color: #f54e51 !important;
+}
+
+.links{
+    padding: 80px !important;
+    margin-left: -20% !important;
+}
+
+.links a:hover{
+    color: #f54e51 !important;
+    border-top: solid 5px black;
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--cor3) !important;
+    margin-top: -3% !important;
+}
+
+    p {
+        font-size: 21px;
+        width: 70%;
+    }
+
+
+
+
+
