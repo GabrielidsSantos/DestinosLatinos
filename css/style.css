@@ -12,7 +12,6 @@
         font-size: 30px;
         width: 100% !important;
         margin-left: 10% !important;
-
     }
 
     .btst {
@@ -23,7 +22,7 @@
     
     .Image {
         width: 90% !important;
-        margin-right: 5% !important;
+        margin-right: -4% !important;
         margin-top: 3% !important;
     }
 
@@ -35,22 +34,24 @@
     .botao {
         width: 50%;
         margin-top: 5% !important;
-        margin-left: 23% !important;
+        margin-left: 35% !important;
     }
     
     #tit {
         font-size: 40px !important;
         width: 100%;
         margin-top: 6%;
-        margin-left: 10% !important;
+        margin-left: 18% !important;
     }
     
     .navbar-nav {
         margin-right: 20%;
         margin-top: -30%;
     }
+
     .footer {
-        width: 110% !important;
+        width: 121% !important;
+        text-align: center !important;
     }
 
     li {
@@ -62,7 +63,7 @@
     .pf {
         width: 100% !important;
         font-size: 16px;
-        margin-right: 10% !important;
+       margin-left: 0% !important;
     }
 
     .rm {
@@ -74,6 +75,9 @@
     margin: 0%;
 }
 
+    body {
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (min-width: 750px) and (max-width:990px){
@@ -108,7 +112,7 @@
     }
 
     #tit {
-        margin-left: 17% !important;
+        margin-left: 11% !important;
         margin-top: -8% !important;
         padding: 50px;
     }
@@ -191,5 +195,6 @@ aside {
 .topo{
     margin-left: 160px;
 }
+
 
 
