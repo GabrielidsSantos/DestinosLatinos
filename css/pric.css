@@ -1,154 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-@media screen and (min-width:990.1px) {
-
-    .icns {
-        margin-left: 36% !important;
-    }
-}
-
-@media screen and (max-width:350px){
-    .topo {
-        font-size: 30px;
-        width: 100% !important;
-        margin-left: 10% !important;
-
-    }
-
-    .btst {
-        margin-top: 5%;
-    }
-
-    .p {width: 80%; margin-left: 10%; margin-top: 5%; font-size: 16px;}
-    
-    .Image {
-        width: 90% !important;
-        margin-right: 5% !important;
-        margin-top: 3% !important;
-    }
-
-    .nav-link {
-        color: #0a1f4e !important;
-        margin-left: -200% !important;
-    }
-    
-    .botao {
-        width: 50%;
-        margin-top: 5% !important;
-        margin-left: 23% !important;
-    }
-    
-    #tit {
-        font-size: 40px !important;
-        width: 100%;
-        margin-top: 6%;
-        margin-left: 10% !important;
-    }
-    
-    .navbar-nav {
-        margin-right: 20%;
-        margin-top: -30%;
-    }
-    .footer {
-        width: 110% !important;
-    }
-
-    li {
-        background-color: white;
-        width: 65%;
-        padding: 5%;
-    }
-
-    .pf {
-        width: 100% !important;
-        font-size: 16px;
-        margin-right: 10% !important;
-    }
-
-    .rm {
-        display: none;
-    }
-    
-*{
+/* Estilos Gerais */
+* {
     box-sizing: border-box;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
 }
 
-iframe{
-    display: none;
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: white;
 }
 
+.container, .row, .col-12 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
-@media screen and (min-width:640px){
-}
-
-*{
-    box-sizing: border-box;
-}
-
-:root 
-{
-  --cor1 : #0a1f4e;
-  --cor2 : #f54e51;
-  --cor3 : #feecd4;
-}
-
+/* Cabeçalho */
 .topo {
+    color: white !important;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+/* Textos */
+h1, h2, h3 {
+    margin: 1rem 0;
+    color: #0a1f4e !important;
+    text-align: center;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 1rem 1rem 1rem;
+    text-align: justify;
+}
+
+/* Imagens e Vídeos */
+img{
+    max-width: 100% ;
+    height: auto ;
+    display: block;
+    margin: 0 auto;
+}
+
+iframe {
+    max-width: 100% !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navegação */
+.navbar {
+    background-color: #f54e51 !important;
+    padding: 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    font-size: 18px;
     color: white !important;
 }
 
-h1 {
-    color: var(--cor1) !important;
-}
-
-h2 {
-    color: #f54e51 !important;
-}
-
-h3 {
+.nav-link:hover {
     color: #0a1f4e !important;
+    border-top: solid 5px black !important;
+    transition: margin-top 2s .5s;
 }
 
-body{
-    margin: 0%;
-    font-family: 'Open Sans' sans-serif;
-    background-color: white;
-    overflow-x: hidden;
+ a {
+   text-decoration: none;
+   color: #0a1f4e; 
 }
 
-a {
-    text-decoration: none;
-    color: var(--cor1);
-}
-
-a:hover {
+a:hover{
     color: #f54e51 !important;
 }
 
-.links{
-    padding: 80px !important;
-    margin-left: -20% !important;
+/* Rodapé */
+.footer {
+    padding: 50px !important;
+    text-align: center !important;
 }
 
-.links a:hover{
-    color: black !important;
-    border-top: solid 5px black;
-}
-
-.navbar {
-    width: 100%;
-    background-color: var(--cor2) !important;
-    margin-top: -3% !important;
-    height: 150px;
-}
-
-    p {
-        font-size: 21px;
-        width: 70%;
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .topo {
+        font-size: 1.5rem;
     }
 
-.arrumarnav {
-    margin-top: 3%;
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    iframe {
+        display: none; /* Ocultar vídeos */
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }
+
+@media screen and (max-width: 480px) {
+    .topo {
+        font-size: 1.2rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .navbar-nav {
+        gap: 0.3rem;
+    }
+
+    .footer {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
 
