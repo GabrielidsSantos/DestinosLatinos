@@ -7,18 +7,22 @@
     }
 }
 
-@media screen and (max-width:350px){
+@media screen and (min-width: 576px) and (max-width: 750px){
+    body {
+        overflow-x: hidden;
+      }
+
     .topo {
         font-size: 30px;
         width: 100% !important;
-        margin-left: 10% !important;
+       margin-left: 33.4% !important;
     }
 
     .btst {
         margin-top: 5%;
     }
 
-    .p {width: 80%; margin-left: 10%; margin-top: 5%; font-size: 16px;}
+    .p {width: 80%; margin-left: 20%; margin-top: 5%; font-size: 16px;}
     
     .Image {
         width: 90% !important;
@@ -41,12 +45,13 @@
         font-size: 40px !important;
         width: 100%;
         margin-top: 6%;
-        margin-left: 18% !important;
+        text-align: center !important;
     }
     
     .navbar-nav {
-        margin-right: 20%;
-        margin-top: -30%;
+        margin-right: 200% !important;
+        margin-top: -10%;
+        text-align: center !important;
     }
 
     .footer {
@@ -68,6 +73,10 @@
 
     .rm {
         display: none;
+    }
+
+    h6 {
+        margin-left: 35% !important;
     }
     
 *{
@@ -107,7 +116,7 @@
         text-align: center !important;
     }
 
-    .aside{
+    .section{
         margin-left: 50px;
     }
 
@@ -168,7 +177,7 @@ p {
     width: 40%;
 }
 
-aside {
+section {
     margin-top: 7%;
 }
 
@@ -195,6 +204,5 @@ aside {
 .topo{
     margin-left: 160px;
 }
-
 
 
